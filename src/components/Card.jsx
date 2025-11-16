@@ -4,8 +4,8 @@ const Card = ({ children, className, hover = false, ...props }) => {
   return (
     <div
       className={cn(
-        'glass rounded-xl p-6 transition-all duration-300',
-        hover && 'hover:scale-[1.02] hover:shadow-xl hover:shadow-primary-500/10',
+        'bg-gray-900/40 border border-gray-800/60 rounded-2xl p-8 transition-all duration-300 backdrop-blur-sm',
+        hover && 'hover:border-gray-700/60 hover:shadow-lg hover:shadow-primary-500/5',
         className
       )}
       {...props}
